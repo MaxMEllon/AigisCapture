@@ -1,6 +1,5 @@
 ﻿using System.Windows;
 using System.Configuration;
-using AigisCapture.Common;
 
 namespace AigisCapture.Common
 {

@@ -2,11 +2,8 @@
 using AigisCapture.Model;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
-using OpenCvSharp;
-using OpenCvSharp.Extensions;
 using System;
 using System.Drawing;
-using System.Drawing.Imaging;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Input;

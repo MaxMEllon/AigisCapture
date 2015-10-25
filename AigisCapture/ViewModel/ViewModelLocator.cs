@@ -1,7 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
-using AigisCapture.ViewModel;
 
 namespace AigisCapture.ViewModel
 {

@@ -1,7 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using System.Activities.Presentation.PropertyEditing;
 
 namespace AigisCapture.Behavior
 {

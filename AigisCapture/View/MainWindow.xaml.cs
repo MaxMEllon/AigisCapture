@@ -1,11 +1,10 @@
-﻿using System.Windows;
-using AigisCapture.ViewModel;
-using AigisCapture.Common;
-using System.Windows.Interop;
+﻿using AigisCapture.Common;
+using AigisCapture.Model;
+using System;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using System;
-using AigisCapture.Model;
+using System.Windows;
+using System.Windows.Interop;
 
 namespace AigisCapture.View
 {

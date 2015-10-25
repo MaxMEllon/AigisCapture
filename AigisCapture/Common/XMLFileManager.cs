@@ -1,10 +1,5 @@
 ﻿using AigisCapture.Model;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 namespace AigisCapture.Common
@@ -15,7 +10,7 @@ namespace AigisCapture.Common
 
         static XMLFileManager()
         {
-            fileName = "aigis_capture.xml";
+            fileName = "AigisCapture.xml";
         }
 
         public static T ReadXml<T>() where T : new()
