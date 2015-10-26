@@ -4,6 +4,7 @@ using OpenCvSharp.Extensions;
 using System;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace AigisCapture.Common
@@ -26,7 +27,7 @@ namespace AigisCapture.Common
                 pos.Y += Env.NAME_AREA_HEIGHT_OF_AIGIS_AREA;
                 size.Height -= Env.NAME_AREA_HEIGHT_OF_AIGIS_AREA;
             }
-            string timeStanp = DateTime.Now.ToString("yyyy_MM_dd_ss");
+            string timeStanp = DateTime.Now.ToString("yyyy_MMdd_HHmmss");
             string filePath = Env.SETTINGS.SaveDirectory + "\\Aigis_" + timeStanp + ".bmp"; 
             Bitmap bmp = new Bitmap(size.Width, size.Height);
             using (Graphics g = Graphics.FromImage(bmp))
