@@ -78,7 +78,7 @@
                     <CheckBox Margin="14, 4"
                               Foreground="White"
                               IsChecked="{Binding IsChecked}"
-                              Content="User名を除去"/>
+                              Content="User名を隠す"/>
                     <TextBlock Margin="0,8,0,0"
                                Foreground="White"
                                FontSize="8"
@@ -126,7 +126,7 @@
                                 Height="24"
                                 FontSize="11"
                                 Foreground="White"
-                                Content="自動追尾"
+                                Content="座標設定(自動)"
                                 Width="100"
                                 Command="{Binding AutoLocationCommand}"
                                 Background="#FF4617B4"/>
