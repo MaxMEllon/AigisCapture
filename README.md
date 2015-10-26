@@ -22,8 +22,25 @@ DMMにて提供されているタワーディフェンス型ゲーム「千年�
 
 ## Requirements
 
-- OpenCVSharp
-- MVVMLightToolKit
+### Enviroment
+
+- .NET Framework 4.5.1
+- C#
+
+### Library
+
+- [MVVMLightToolKit](http://www.mvvmlight.net/)
+  - **用途** : MVVM(Model/View/ViewModel)パターン用インフラストラクチャ  
+  - **ライセンス** : The MIT License (MIT)
+
+- [OpenCVSharp](https://github.com/shimat/opencvsharp)
+  - **用途** : アイギス画面追従のための画像認識
+  - **ライセンス** : BSD 3-Clause License
+
+## Reference
+
+- [WPF で Visual Studio 2012 のような光るウィンドウを作る](http://grabacr.net/archives/507)
+- [添付ビヘイビアを使い TextBox で数値以外を入力できなくする。](http://d.hatena.ne.jp/hilapon/20101021/1287641423)
 
 ## LICENSE
 
