@@ -104,8 +104,8 @@ namespace AigisCapture.ViewModel
                             try
                             {
                                 Point pos = new Point(int.Parse(X), int.Parse(Y));
-                                imageSupporter.ScreanShot(pos, IsChecked);
-                                Message = "スクリーンショットを撮影しました";
+                                string fileName = imageSupporter.ScreanShot(pos, IsChecked);
+                                Message = "スクリーンショットを撮影しました  " + fileName;
                             }
                             catch(Exception e)
                             {

@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:ignore="http://www.ignore.com"
         mc:Ignorable="d ignore"
-        Height="130" Width="300"
+        Height="150" Width="300"
         Title="AigisCapture"
         WindowStyle="None"
         Topmost="True"
@@ -34,8 +34,7 @@
                               BlurRadius="20"
                               Color="#FF007ACC" />
         </Border.Effect>
-        <Grid Height="108"
-              VerticalAlignment="Bottom">
+        <Grid VerticalAlignment="Top">
             <Grid Grid.Row="0">
                 <Button Name="ExitButton"
                         Grid.Row="0"
@@ -55,7 +54,8 @@
                            FontFamily="Arial">
                 </TextBlock>
             </Grid>
-            <Grid Grid.Row="1">
+            <Grid Grid.Row="1"
+                  VerticalAlignment="Top" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="1*" />
@@ -64,6 +64,7 @@
                             Orientation="Vertical"
                             Margin="5"
                             Width="126"
+                            Height="85"
                             VerticalAlignment="Top"
                             HorizontalAlignment="Left">
                     <Button Style="{StaticResource MetroButton}"
@@ -75,14 +76,10 @@
                             Content="Save"
                             Command="{Binding SaveCommand}"
                             Background="#FF35A20C"/>
-                    <CheckBox Margin="14, 4"
+                    <CheckBox Margin="14, 2"
                               Foreground="White"
                               IsChecked="{Binding IsChecked}"
                               Content="User名を隠す"/>
-                    <TextBlock Margin="0,8,0,0"
-                               Foreground="White"
-                               FontSize="8"
-                               Text="{Binding Message}" />
                 </StackPanel>
                 <StackPanel Grid.Column="1" Orientation="Vertical">
                     <Grid Height="20" Margin="0,4,0,0">
@@ -133,9 +130,18 @@
                     </StackPanel>
                 </StackPanel>
             </Grid>
+            <Border Grid.Row="2" Background="#FF007ACC" >
+                <TextBlock Margin="10,5,10,0"
+                           Height="15"
+                           Foreground="White"
+                           FontSize="8"
+                           Text="{Binding Message}">
+                </TextBlock>
+            </Border>
             <Grid.RowDefinitions>
                 <RowDefinition Height="18" />
                 <RowDefinition Height="*" />
+                <RowDefinition Height="20" />
             </Grid.RowDefinitions>
         </Grid>
     </Border>

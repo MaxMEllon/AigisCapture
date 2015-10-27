@@ -19,7 +19,7 @@ namespace AigisCapture.Common
             template = Properties.Resources.Home;
         }
 
-        public void ScreanShot(Point pos, bool noNameFlag)
+        public string ScreanShot(Point pos, bool noNameFlag)
         {
             Size size = new Size(Env.AIGIS_WINDOW_SIZE.Width, Env.AIGIS_WINDOW_SIZE.Height);
             if (noNameFlag)
@@ -28,13 +28,16 @@ namespace AigisCapture.Common
                 size.Height -= Env.NAME_AREA_HEIGHT_OF_AIGIS_AREA;
             }
             string timeStanp = DateTime.Now.ToString("yyyy_MMdd_HHmmss");
-            string filePath = Env.SETTINGS.SaveDirectory + "\\Aigis_" + timeStanp + ".bmp"; 
+            string fileNeme = "Aigis_" + timeStanp + ".bmp";
+            string filePath = Env.SETTINGS.SaveDirectory + "\\" + fileNeme;
             Bitmap bmp = new Bitmap(size.Width, size.Height);
             using (Graphics g = Graphics.FromImage(bmp))
             {
                 g.CopyFromScreen(new Point(pos.X, pos.Y), new Point(0, 0), bmp.Size);
             }
             bmp.Save(filePath, ImageFormat.Bmp);
+
+            return fileNeme;
         }
 
         public Point OverlapLocation
