@@ -31,11 +31,8 @@ namespace AigisCapture.View
         {
             InitializeComponent();
             this.MouseLeftButtonDown += (sender, e) => this.DragMove();
-            this.ExitButton.Click += (sender, e) =>
-            {
-                this.Close();
-                XMLFileManager.WriteXml<Settings>(Env.SETTINGS);
-            };
+            this.ExitButton.Click += (sender, e) => this.Close();
+            this.Closed += (sender, e) => XMLFileManager.WriteXml<Settings>(Env.SETTINGS);
         }
 
         protected override void OnSourceInitialized(EventArgs e)
