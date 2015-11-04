@@ -25,7 +25,7 @@ DMMにて提供されているタワーディフェンス型ゲーム「千年�
 ### Enviroment
 
 - .NET Framework 4.5.1
-- C#
+- C# 6.0
 
 ### Library
 
