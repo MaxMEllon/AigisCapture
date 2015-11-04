@@ -94,6 +94,7 @@
                                        Foreground="White" />
                             <TextBox Width="38"
                                      Name="TextBoxX"
+                                     behavior:TextBoxBehavior.IsNumeric="True"
                                      Text="{Binding X}"/>
                         </StackPanel>
                         <StackPanel Grid.Column="1" HorizontalAlignment="Center" Orientation="Horizontal">
@@ -102,6 +103,7 @@
                                        FontSize="12"
                                        Foreground="White" />
                             <TextBox Width="38"
+                                     Name="TextBoxY"
                                      behavior:TextBoxBehavior.IsNumeric="True"
                                      Text="{Binding Y}"/>
                         </StackPanel>

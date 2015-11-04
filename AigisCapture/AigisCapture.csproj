@@ -120,7 +120,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Behavior\TextBoxBehavior.cs" />
-    <Compile Include="Common\ImageSupporter.cs" />
+    <Compile Include="Model\ImageSupporter.cs" />
     <Compile Include="Common\Log.cs" />
     <Compile Include="Common\WindowPlacement.cs" />
     <Compile Include="Common\WindowSettings.cs" />

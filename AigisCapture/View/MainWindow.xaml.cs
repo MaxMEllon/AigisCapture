@@ -30,6 +30,12 @@ namespace AigisCapture.View
         public MainWindow()
         {
             InitializeComponent();
+            Env.SETTINGS = XMLFileManager.ReadXml<Settings>();
+            this.Loaded += (sender, e) =>
+            {
+                TextBoxX.Text = Env.SETTINGS.AigisWindowX;
+                TextBoxY.Text = Env.SETTINGS.AigisWindowY;
+            };
             this.MouseLeftButtonDown += (sender, e) => this.DragMove();
             this.ExitButton.Click += (sender, e) => this.Close();
             this.Closed += (sender, e) => XMLFileManager.WriteXml<Settings>(Env.SETTINGS);

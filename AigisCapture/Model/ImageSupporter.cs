@@ -7,7 +7,7 @@ using System.Drawing.Imaging;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
-namespace AigisCapture.Common
+namespace AigisCapture.Model
 {
 
     public class ImageSupporter
@@ -22,20 +22,17 @@ namespace AigisCapture.Common
         public string ScreanShot(Point pos, bool noNameFlag)
         {
             Size size = new Size(Env.AIGIS_WINDOW_SIZE.Width, Env.AIGIS_WINDOW_SIZE.Height);
-            if (noNameFlag)
-            {
-                pos.Y += Env.NAME_AREA_HEIGHT_OF_AIGIS_AREA;
-                size.Height -= Env.NAME_AREA_HEIGHT_OF_AIGIS_AREA;
-            }
             string timeStanp = DateTime.Now.ToString("yyyy_MMdd_HHmmss");
-            string fileNeme = "Aigis_" + timeStanp + ".bmp";
+            string fileNeme = "Aigis_" + timeStanp + ".png";
             string filePath = Env.SETTINGS.SaveDirectory + "\\" + fileNeme;
             Bitmap bmp = new Bitmap(size.Width, size.Height);
             using (Graphics g = Graphics.FromImage(bmp))
             {
                 g.CopyFromScreen(new Point(pos.X, pos.Y), new Point(0, 0), bmp.Size);
+                Rectangle rectangle = new Rectangle(Env.NAME_AREA_LOCATION, Env.NAME_AREA_SIZE);
+                if (noNameFlag) { g.FillRectangle(Brushes.White, rectangle); }
             }
-            bmp.Save(filePath, ImageFormat.Bmp);
+            bmp.Save(filePath, ImageFormat.Png);
 
             return fileNeme;
         }
