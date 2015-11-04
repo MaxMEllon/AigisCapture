@@ -30,7 +30,7 @@ DMMにて提供されているタワーディフェンス型ゲーム「千年�
 ### Library
 
 - [MVVMLightToolKit](http://www.mvvmlight.net/)
-  - **用途** : MVVM(Model/View/ViewModel)パターン用インフラストラクチャ  
+  - **用途** : MVVM(Model/View/ViewModel)パターン用インフラストラクチャ
   - **ライセンス** : The MIT License (MIT)
 
 - [OpenCVSharp](https://github.com/shimat/opencvsharp)

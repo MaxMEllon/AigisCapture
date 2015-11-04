@@ -166,8 +166,8 @@ namespace AigisCapture.ViewModel
                         () =>
                         {
                             Point pos = imageSupporter.OverlapLocation;
-                            X = pos.X.ToString();
-                            Y = pos.Y.ToString();
+                            Env.SETTINGS.AigisWindowX = X = pos.X.ToString();
+                            Env.SETTINGS.AigisWindowY = Y = pos.Y.ToString();
                             Message = "画面位置を設定しました";
                         });
                 }
