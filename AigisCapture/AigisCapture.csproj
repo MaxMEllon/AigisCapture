@@ -128,6 +128,9 @@
     <Compile Include="Common\XMLFileManager.cs" />
     <Compile Include="Model\Env.cs" />
     <Compile Include="Model\Settings.cs" />
+    <Content Include="README.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Compile Include="ViewModel\MainViewModel.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
     </Compile>
