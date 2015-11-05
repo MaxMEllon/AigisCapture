@@ -1,6 +1,6 @@
 # AigisCapture
 
-[![BuildStatus](https://img.shields.io/appveyor/ci/maxmellon/AigisCapture/master.svg?style=flat-square)](https://ci.appveyor.com/project/MaxMEllon/attereco-front/branch/master)
+[![BuildStatus](https://img.shields.io/appveyor/ci/maxmellon/AigisCapture/master.svg?style=flat-square)](https://ci.appveyor.com/project/MaxMEllon/aigiscapture)
 [![Release](https://img.shields.io/github/release/MaxMEllon/AigisCapture.svg?style=flat-square)](https://github.com/MaxMEllon/AigisCapture/releases/latest)
 [![License](https://img.shields.io/github/license/MaxMEllon/AigisCapture.svg?style=flat-square)](https://github.com/MaxMEllon/AigisCapture/blob/master/LICENSE.txt)
 
